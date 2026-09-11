@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🖥️ My White, Black, & Lavender PC Build</title>
+    <style>
+        /* White, Black, and Light Lavender Theme */
+        :root {
+            --bg-color: #0b0c10;        /* Matte Black Background */
+            --card-bg: #ffffff;        /* Stark White Main Container */
+            --text-main: #1f2937;      /* Dark Charcoal Text for White Background */
+            --text-muted: #4b5563;    /* Muted Grey Text */
+            --lavender: #d6bfff;       /* Light Lavender RGB Glow */
+            --lavender-dark: #bca0f5;  /* Deep Lavender for Links/Accents */
+            --border-color: #e5e7eb;   /* Light Grey Borders */
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 16px;
+            /* Lavender glowing border effect */
+            border: 2px solid var(--lavender);
+            box-shadow: 0 0 25px rgba(214, 191, 255, 0.3);
+        }
+
+        h1, h2, h3 {
+            color: #111827;
+            margin-top: 30px;
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            text-align: center;
+            margin-top: 0;
+            border-bottom: 3px solid var(--lavender);
+            padding-bottom: 15px;
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 5px;
+            color: #111827;
+        }
+
+        .accent-text {
+            color: var(--lavender-dark);
+            font-weight: bold;
+        }
+
+        /* Responsive Images with Lavender Frame */
+        .showcase-img {
+            width: 100%;
+            max-height: 480px;
+            object-fit: cover;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            margin: 20px 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        /* Clean Specs Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            padding: 14px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        th {
+            background-color: #f9fafb;
+            color: #374151;
+            font-weight: 600;
+        }
+
+        tr:hover {
+            background-color: #f9fafb;
+        }
+
+        /* Upgrades Checkbox List */
+        .upgrade-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .upgrade-list li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .upgrade-list li::before {
+            content: "⬜";
+            margin-right: 12px;
+            font-size: 0.9rem;
+        }
+
+        .upgrade-list li.completed {
+            color: var(--text-muted);
+            text-decoration: line-through;
+        }
+
+        .upgrade-list li.completed::before {
+            content: "🔮"; /* Lavender crystal/orb for completed tasks */
+        }
+
+        /* Grid for Stats/Benchmarks */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .stat-card {
+            background: #f9fafb;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid var(--border-color);
+            text-align: center;
+            transition: transform 0.2s;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-2px);
+            border-color: var(--lavender);
+        }
+
+        .stat-card .label {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .stat-card .number {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--lavender-dark);
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>🖥️ Custom PC Showcase: <span class="accent-text">Lavender Minimalist</span></h1>
+        <p style="text-align: center; font-style: italic; color: var(--text-muted);">A contrast-driven build featuring a clean white and black core with soft lavender RGB accents.</p>
+
+        <!-- Main Image Placeholder -->
+        <img src="./images/finished_build.jpg" alt="White and Black PC Build with Lavender RGB" class="showcase-img">
+
+        <h2>📊 Hardware Specifications</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Component</th>
+                    <th>Part Name</th>
+                    <th>Design Reason</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>CPU</strong></td>
+                    <td>[Insert CPU Name Here]</td>
+                    <td>Handles coding, gaming, and multitasking flawlessly.</td>
+                </tr>
+                <tr>
+                    <td><strong>GPU</strong></td>
+                    <td>[Insert GPU Name Here]</td>
+                    <td>Fits perfectly into the build's color scheme.</td>
+                </tr>
+                <tr>
+                    <td><strong>Case</strong></td>
+                    <td>[Insert Case Name Here]</td>
+                    <td>Provides clean cable management and highlights the internal theme.</td>
+                </tr>
+                <tr>
+                    <td><strong>RGB Lighting</strong></td>
+                    <td>Custom Lavender Profile</td>
+                    <td>Set to a soft static lavender glow to tie the aesthetic together.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>🛠️ Design & Theme Philosophy</h2>
+        <h3>The Aesthetic Vision</h3>
+        <p>This build balances stark white components against a clean black backdrop. To keep the look modern and avoid standard rainbow lighting, the entire system utilizes a curated light lavender RGB layout to cast a soft glow over the hardware.</p>
+
+        <h2>📈 Performance & Thermal Benchmarks</h2>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="label">Idle CPU Temp</div>
+                <div class="number">34°C</div>
+            </div>
+            <div class="stat-card">
+                <div class="label">Max Gaming Temp</div>
+                <div class="number">61°C</div>
+            </div>
+            <div class="stat-card">
+                <div class="label">System Fan Noise</div>
+                <div class="number">Silent</div>
+            </div>
+        </div>
+
+        <h2>🌟 Next Steps & Future Upgrades</h2>
+        <ul class="upgrade-list">
+            <li class="completed">Set up custom static lavender lighting profiles</li>
+            <li>Install custom black and white braided extension cables</li>
+            <li>Add a matching white desk mat to anchor the setup</li>
+        </ul>
+    </div>
+
+</body>
+</html>
